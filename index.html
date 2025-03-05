@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FHO Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">FG</div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="hero" id="home">
+        <div class="hero-left">
+            <div class="hero-content">
+                <div class="intro-text">
+                    <span class="greeting">Hello World_</span>
+                    <h1>I'm a</h1>
+                    <h1 class="developer-title">Game <span class="highlight">Developer</span></h1>
+                </div>
+                <div class="static-text">
+                    Unity Developer | Creative Thinker | Web Developer
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-right">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="code-title">player_controller.cs</div>
+                </div>
+                <div class="code-content">
+                    <pre><code><span class="comment">// Character Controller Script</span>
+<span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">PlayerController</span> : <span class="class-name">MonoBehaviour</span> {
+    <span class="keyword">private</span> <span class="type">Vector3</span> movement;
+    <span class="keyword">private</span> <span class="type">Rigidbody</span> rb;
+    
+    <span class="keyword">void</span> <span class="function">Start</span>() {
+        rb = <span class="function">GetComponent</span>&lt;<span class="type">Rigidbody</span>&gt;();
+    }
+
+    <span class="keyword">void</span> <span class="function">Update</span>() {
+        <span class="comment">// Get input</span>
+        movement.x = <span class="class-name">Input</span>.<span class="function">GetAxis</span>(<span class="string">"Horizontal"</span>);
+        movement.z = <span class="class-name">Input</span>.<span class="function">GetAxis</span>(<span class="string">"Vertical"</span>);
+    }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="about-projects scroll-fade-in">
+        <div class="section-container">
+            <div class="about-card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>I'm a passionate game developer with a strong foundation in Unity and C#. I love creating immersive experiences and bringing creative ideas to life through code.</p>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="projects-1.png" alt="Unity 3D Game">
+                    <div class="project-overlay">
+                        <h3>Just a Shave</h3>
+                        <p>A 48-hour 3D game jam entry with the theme 'what if'.</p>
+                    </div>
+                </div>
+                <!-- <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <div class="project-overlay">
+                        <h3>Mobile Game</h3>
+                        <p>An addictive mobile game developed with Unity</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Project 3">
+                    <div class="project-overlay">
+                        <h3>Web Portfolio</h3>
+                        <p>A responsive portfolio website built with modern web technologies</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project4.jpg" alt="Project 4">
+                    <div class="project-overlay">
+                        <h3>VR Experience</h3>
+                        <p>An immersive VR game created with Unity and SteamVR</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Game Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Unity</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C#</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Game Design</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">HTML5</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CSS</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Git & Version Control</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Problem Solving</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">System Architecture</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Software & Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Visual Studio</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Adobe Creative Suite</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">3D Modeling</span>
+                        <div class="skill-bar"><div class="skill-progress" style="width: 40%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact scroll-fade-in">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly chat</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/furkanhmdozdemir/" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/fuejan" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://fuejans.itch.io" target="_blank" class="social-btn">
+                        <i class="fab fa-itch-io"></i>
+                        <span>Itch.io</span>
+                    </a>
+                    <a href="mailto:furkanozdemir1241@icloud.com" class="social-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FG.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
